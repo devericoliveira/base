@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário: Semântica</title>
+</head>
+<body>
+  <!-- 
+    filedset: Usado para agrupar informações dentro de um formulário, exemplo: dados pessoais.
+    
+    legend: Titulo para o agrupamento de informações dentro do formulário.
+  -->
+  <form action="/processar" method="POST">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+    </fieldset>
+  
+    <button type="submit">Enviar</button>
+  </form>
+  
+</body>
+</html>
