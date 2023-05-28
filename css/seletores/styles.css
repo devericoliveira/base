@@ -1,0 +1,25 @@
+h1 {
+  color: blue;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* O seletor .destaque define o estilo em negrito para o elemento <p> que possui a classe "destaque". */
+
+.destaque {
+  font-weight: bold;
+}
+
+/* O seletor ul > li define a cor vermelha para todos os elementos <li> que são filhos diretos de um elemento <ul>.  */
+
+ul > li {
+  color: red;
+}
+
+/* O seletor h1 ~ p define a fonte em itálico para todos os elementos <p> que são irmãos diretos de um elemento <h1>. */
+
+h1 ~ p {
+  font-style: italic;
+}
