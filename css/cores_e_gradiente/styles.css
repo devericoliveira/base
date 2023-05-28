@@ -1,0 +1,20 @@
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box + .box {
+  margin-top: 1rem;
+}
+
+.background-solid {
+  /* Nome: Podemos adicionar as cores pelos nomes */
+  /* RGB/RGBA: Podemos adicionar as cores pela escala red, green e blue, também podendo adicionar a opacidade. */
+  /* Hexadecimal: Podemos adicionar as cores pela escala red, green e blue, também podendo adicionar a opacidade. */
+  background-color: cornflowerblue;
+}
+
+.background-gradient {
+  /* Gradientes Lineares: Os gradientes lineares permitem criar transições suaves entre duas ou mais cores em uma direção específica. É possível especificar o ponto inicial e o ponto final do gradiente, bem como as cores intermediárias. */
+  background-image: linear-gradient(to right, rgb(237, 100, 100) 50%, rgb(255, 165, 0));
+}
