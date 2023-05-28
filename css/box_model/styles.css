@@ -1,0 +1,17 @@
+/* 
+  Conteúdo (Content): É a área que contém o conteúdo do elemento, como texto, imagens, elementos filhos, etc. A largura e a altura do conteúdo são definidas pelas propriedades width (largura) e height (altura).
+
+  Preenchimento (Padding): É uma área transparente que fica entre o conteúdo e a borda. O preenchimento é controlado pelas propriedades padding-top, padding-right, padding-bottom e padding-left, que definem a quantidade de espaço dentro da caixa em cada lado.
+
+  Borda (Border): É uma linha que envolve o conteúdo e o preenchimento. A borda é definida pelas propriedades border-width, border-style e border-color. Por exemplo, border: 1px solid black; define uma borda sólida de 1 pixel com cor preta.
+
+  Margem (Margin): É uma área transparente que fica fora da borda e separa um elemento de outros elementos vizinhos. As margens são controladas pelas propriedades margin-top, margin-right, margin-bottom e margin-left. Elas definem o espaço entre as caixas de diferentes elementos.
+*/
+
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+}
