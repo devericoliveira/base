@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+  display flex: é considerado um contêiner flex, e seus filhos diretos são chamados de itens flex. O contêiner flex organiza os itens em uma linha (ou coluna) principal e pode controlar o fluxo, a direção e o alinhamento dos itens.
+  
+  Alinhamento dos Itens: O Flexbox oferece diversas propriedades para controlar o alinhamento dos itens no contêiner flex. Algumas das principais propriedades incluem:
+
+  justify-content: controla o alinhamento dos itens ao longo do eixo principal.
+  align-items: controla o alinhamento dos itens ao longo do eixo cruzado.
+  align-self: permite que um item individual substitua o alinhamento definido pelo contêiner.
+  Ordem dos Itens: O Flexbox permite alterar a ordem dos itens independentemente de sua ordem no código HTML, usando a propriedade order. Os itens com um valor de order menor são posicionados antes dos itens com um valor maior.
+
+  Dimensionamento e Flexibilidade: O Flexbox permite que os itens se dimensionem automaticamente para preencher o espaço disponível ou se contraiam para evitar o estouro do contêiner. Isso é controlado pelas propriedades flex-grow, flex-shrink e flex-basis.
+
+  Espaçamento e Distribuição: O Flexbox facilita o espaçamento e a distribuição dos itens no contêiner. Algumas das principais propriedades para isso incluem:
+
+  flex-wrap: permite que os itens sejam quebrados em várias linhas, se necessário.
+  justify-content: controla o espaçamento entre os itens ao longo do eixo principal.
+  align-content: controla o espaçamento entre as linhas de itens quando ocorre quebra em várias linhas.
+
+  Aninhamento Flex: O Flexbox também suporta o aninhamento de contêineres flex, permitindo a criação de layouts mais complexos e hierárquicos.
+*/
+
+header {
+  padding: 1rem;
+  background-color: rgb(0, 10, 36);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Utilizando bordas para ver o comportamento dos itens dentro de uma container flexivel. */
+
+a {
+  font-size: 1.125rem;
+  color: white;
+  text-decoration: none;
+}
+
+header > a {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+header nav {
+  display: flex;
+  gap: 1rem; 
+  border: 1px solid rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: initial;
+    flex-direction: column;
+    /* Como a direção do eixo foi trocada, as propriedades mudam de direção. */
+    align-items: center;
+    gap: 2rem;
+  }
+}
