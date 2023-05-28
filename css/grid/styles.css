@@ -1,0 +1,44 @@
+/* 
+  Grid Container: O elemento pai que possui a propriedade display: grid é considerado um grid container. Ele define o contexto para os itens dentro da grade e pode ter várias linhas e colunas.
+
+  Grid Items: Os elementos filhos diretos de um grid container são chamados de grid items. Esses itens são posicionados dentro da grade, ocupando uma ou mais células.
+
+  Grid Tracks: As linhas horizontais e verticais que formam a estrutura da grade são chamadas de grid tracks. Elas podem ser criadas explicitamente usando propriedades como grid-template-rows e grid-template-columns, ou serem geradas automaticamente.
+
+  Posicionamento de Grid Items: O CSS Grid oferece várias propriedades para controlar o posicionamento dos grid items, como grid-row, grid-column, grid-area e grid-template-areas. Essas propriedades permitem especificar em quais linhas e colunas um item deve ser posicionado.
+
+  Espaçamento e Alinhamento: O CSS Grid fornece propriedades para controlar o espaçamento e o alinhamento dos grid items dentro da grade. Algumas dessas propriedades incluem grid-gap, justify-items, align-items, justify-content e align-content.
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 100px;
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.item1 {
+  grid-area: 1 / 1 / 2 / 3; /* Posicionado da primeira à segunda coluna e primeira linha */
+}
+
+.item2 {
+  grid-area: 1 / 3 / 3 / 4; /* Posicionado da terceira coluna e da primeira à segunda linha */
+}
+
+.item3 {
+  grid-area: 2 / 2 / 3 / 3; /* Posicionado na segunda coluna e segunda linha */
+}
+
+.item4 {
+  grid-area: 3 / 1 / 4 / 2; /* Posicionado na primeira coluna e terceira linha */
+}
+
+.item5 {
+  grid-area: 3 / 2 / 4 / 4; /* Posicionado da segunda à terceira coluna e terceira linha */
+}
