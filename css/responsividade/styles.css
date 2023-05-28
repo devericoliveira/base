@@ -1,0 +1,21 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.box {
+  display: inline-block;
+  width: 12.5rem;
+  height: 12.5rem;
+  background-color: blue;
+}
+ 
+/* Estilos para telas menores que 768px */
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+}
